@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        
+        <title> Presentation </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+        <style type="text/css">
+            div.page{
+                min-height: 768px;
+                padding: 40px 80px;
+                /* border: 1px solid rgba(0, 0, 0, 0.20); */
+                border: 1px solid #999;
+                border-radius: 5px;
+                margin: 20px 50px;
+            }
+
+            div.page>h1{
+                border-bottom: 8px solid #c3558c;
+                padding-bottom: 10px;
+            }
+
+            .page p, .page li {
+                font-size: 30px;
+                /* font-family: "Dejavu Sans"; */
+                line-height: 40px;
+                margin-bottom: 30px;
+            }
+
+            .page blockquote {
+                width: 800px;
+            }
+            .page blockquote>p {
+                font-size: 30px;
+                line-height: 35px;
+                /* font-family: "Dejavu Sans Serif"; */
+            }
+
+            .page ul {
+                list-style-type: none;
+            }
+
+            .page li>p{
+                border-left: 10px solid #c3558c;
+                padding-left: 20px;
+            }
+
+            .page h2{
+                background-color: #e8b4c1;
+                padding: 5px 30px;
+                margin-bottom: 0px;
+                box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.6);
+                border-radius: 10px 10px 10px 0px;
+            }
+
+            .cover h1{
+                margin-top: 180px;
+                font-size: 60px;
+                line-height: 80px;
+            }
+
+            .table.data td, .table.data th{
+                padding: 10px 20px !important;
+                font-size: 18px !important;
+            }
+
+            body {
+                background-color: #eee !important;
+            }
+
+            body div.page {
+                background-color: #fff;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+            }
+
+            div.page span.page-number {
+                font-size: 20px;
+            }
+
+            .cover th,.cover td{
+                /* width: 800px; */
+                margin-top: 100px;
+                font-size: 30px !important;
+                line-height: 50px !important;
+            }
+
+        </style>
+
+        <script type="text/javascript">
+            $(function(){
+                var pages = $('body>div.page');
+                pages.prepend('<span class="page-number pull-right"></span>');
+                for(var i = 0; i < pages.length; i++){
+                    var page = $(pages[i]);
+                    console.log(page);
+                    page.attr("id", "page-"+(i+1));
+                    page.find('.page-number').text(""+(i+1)+"/"+(pages.length));
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div class="page cover">
+            <h1> Long Long Long Title of Presentation </h1>
+            <table class="table table-striped">
+                <tr>
+                    <th>Conference:</th>
+                    <td> Name of Conference</td>
+                </tr>
+                <tr>
+                    <th>Publication Date:</th>
+                    <td> 1988-02-28 </td>
+                </tr>
+                <tr>
+                    <th>Team:</th>
+                    <td><span class="suzaku">Suzaku</span></td>
+                </tr>
+                <tr>
+                    <th>Members:</th>
+                    <td>Guanxian.Lee(李冠贤), Zhanrui.Liang(梁展瑞)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="page">
+            <h1> Background</h1>
+            <p>
+            Efficient CSS is not a new topic, nor one that I really need to cover, but...
+            </p>
+
+            <blockquote>
+                <p>
+                A lot of people forget, or simply don't realise, that CSS can be both performant and non-performant. This can be easily forgiven however when you realise just how little you can, err, realise, non-performant CSS.
+                </p>
+            </blockquote>
+            <ul>
+                <li>
+                    <h2>Problem 1</h2>
+                    <p>
+                    A lot of people forget, or simply don't realise, that CSS can be both performant and non-performant.
+                    </p>
+                </li>
+                <li>
+                    <h2>Problem 2</h2>
+                    <p>
+                    This can be easily forgiven however when you realise just how little you can, err, realise, non-performant CSS.
+                    </p>
+                </li>
+                <li>
+                    <h2>Problem 3</h2>
+                    <p>
+                    This can be easily forgiven however when you realise just how little you can, err, realise, non-performant CSS.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="page">
+            <h1> Existing research problems </h1>
+            <table class="table data table-striped table-condensed">
+                <tr>
+                    <th>adlfA</th>
+                    <th>ialsdB</th>
+                    <th>alsdjC</th>
+                    <th>asldkfjD</th>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>320</td>
+                    <td>14142</td>
+                    <td>14142</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>102</td>
+                    <td>232</td>
+                    <td>20302</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>022023</td>
+                    <td>20209</td>
+                    <td>14142</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>022023</td>
+                    <td>20209</td>
+                    <td>14142</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>022023</td>
+                    <td>20209</td>
+                    <td>14142</td>
+                </tr>
+            </table>
+        </div>
+        <div class="page">
+            <h1>Proposed Contribution</h1>
+        </div>
+        <div class="page">
+            <h1> Methods </h1>
+        </div>
+    </body>
+</html>
