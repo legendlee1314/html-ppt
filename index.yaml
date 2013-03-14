@@ -1,0 +1,141 @@
+- head:
+    - meta[]:
+        - charset: utf-8
+    - title: Presentation
+
+    - link[]:
+        - rel: stylesheet
+        - href: css/bootstrap.min.css
+    - link[]:
+        - rel: stylesheet
+        - href: css/master.css
+    - script[type=text/javascript, src=js/jquery-1.8.3.min.js]:
+    - script[type=text/javascript, src=js/bootstrap.min.js]:
+- body:
+    - script[type=text/javascript, src=js/master.js]:
+    - div.page.cover:
+        - h1: A Software Architecture for Integrated Service Robot Development
+        - table.table.table-striped:
+            - tr:
+                - th: Conference
+                - td: Systems, Man, and Cybernetics, 1997. 
+            - tr:
+                - th: Date of Publication
+                - td: 12-15 Oct 1997
+            - tr:
+                - th: Team
+                - td: Suzaku
+            - tr:
+                - th: Members
+                - td: Guanxian.Lee(李冠贤), Zhanrui.Liang(梁展瑞)
+
+    - div.page:
+        - h1: Background
+        - h2: Abstract
+        - ul:
+            - li: A computational architecture.
+            - li: focus on the problem of dynamic integrating.
+            - li: object-based software technology (OOP)
+
+        - h2: Grand Challenge
+        - ul:
+            - li: The Grand challenge for IEEE Robotics and Automation Society
+            - li: The system issue may prevent research / application development
+
+        - p: This paper is describing a system architecture to address the grand challenge.
+
+    - div.page:
+        - h1: Existing Research Problems
+        - ul:
+            - li: Action selection and Arbitration
+            - li: Impedance mismatch between specification and design in software systems
+            - li: System decomposition
+
+    - div.page:
+        - h1: Proposed Contribution
+        - p: Presents a computational architecture that addresses the grand challenge problem of 
+            system integration.
+
+    - div.page:
+        - h1: Methods
+
+        - h2: design a good system architecture
+        - p: IMA - The Intelligent Machine Architecture
+
+        - h2: what's a architecture?
+        - p: A set of organizing principles and core components that are used to build the basis for the system.
+
+        - h2: what a good architecture should be?
+        - p: Be like their IMA.
+
+
+    - div.page:
+        - h1: Methods (Cont.)
+
+        - h2: system decomposition
+
+        - h3: agent
+        - p: 
+             IMA is agent-based.  The term Agent is very popular at that time.
+
+        - h3: knowledge-based
+        - p: excel at applying knowledge, work by exchanging/manipulating knowledge
+
+        - h3: behavior-based(newer), approaches
+        - ul: 
+            - li: strict priority
+            - li: voting schemes
+            - li: spreading activation mechanism
+        - h3: hybrid
+        - p: can have advantages from both knowledge-based and behavior-based system decomposition.
+
+    - div.page:
+        - h1: Methods (Cont.)
+
+        - h3: A service robotics benchmark
+        - p: Test the IMA using robots ISAC and Helpmate.
+        - span.row-fluid:
+            - img.span7[]:
+                - alt: "ISAC"
+                - src: img/ISAC-KH.jpg
+            - img.offset1.span4[]:
+                - alt: "Helpmate"
+                - src: img/HelpMate.jpg
+
+    - div.page:
+        - h2: IMA - Intelligent Machine Architecture
+        - p: IMA has agents as subsystems.
+
+        - div.row-fluid:
+            - div.span6:
+                - h3: properties of an agent assumed in IMA
+                - ul:
+                    - li: Autonomy
+                    - li: Proactivity
+                    - li: Reactivity
+                    - li: Connectivity
+                    - li: Resource Bounded
+            - div.span6:
+                - h3: Agent components
+                - ul:
+                    - li: Agent Manager
+                    - li: Agent Decision Engine
+                    - li: Agent Productions
+                    - li: Agent Resources
+                    - li: Agent Component Managers
+
+    - div.page:
+        - h1: Results
+        - p: They don't finish yet(at that time). They used IMA to implement,
+        - ul:
+            - li: visual servoing
+            - li: skin-tone tracking
+            - li: arm motion control
+
+    - div.page:
+        - h1: Importance of work
+        - p: huh?
+
+    - div.page:
+        - span[style="font-size:120px;position:relative;top:200px;left:200px;"]:
+            Thank you.

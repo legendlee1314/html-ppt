@@ -1,0 +1,278 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>
+        Presentation
+        </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/master.css" />
+        <script src="js/jquery-1.8.3.min.js" type="text/javascript">
+        </script>
+        <script src="js/bootstrap.min.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <script src="js/master.js" type="text/javascript">
+        </script>
+        <div class="page cover">
+            <h1>
+            A Software Architecture for Integrated Service Robot Development
+            </h1>
+            <table class="table table-striped">
+                <tr>
+                    <th>
+                    Conference
+                    </th>
+                    <td>
+                    Systems, Man, and Cybernetics, 1997.
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                    Date of Publication
+                    </th>
+                    <td>
+                    12-15 Oct 1997
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                    Team
+                    </th>
+                    <td>
+                    Suzaku
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                    Members
+                    </th>
+                    <td>
+                    Guanxian.Lee(李冠贤), Zhanrui.Liang(梁展瑞)
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="page">
+            <h1>
+            Background
+            </h1>
+            <h2>
+            Abstract
+            </h2>
+            <ul>
+                <li>
+                A computational architecture.
+                </li>
+                <li>
+                focus on the problem of dynamic integrating.
+                </li>
+                <li>
+                object-based software technology (OOP)
+                </li>
+            </ul>
+            <h2>
+            Grand Challenge
+            </h2>
+            <ul>
+                <li>
+                The Grand challenge for IEEE Robotics and Automation Society
+                </li>
+                <li>
+                The system issue may prevent research / application development
+                </li>
+            </ul>
+            <p>
+            This paper is describing a system architecture to address the grand challenge.
+            </p>
+        </div>
+        <div class="page">
+            <h1>
+            Existing Research Problems
+            </h1>
+            <ul>
+                <li>
+                Action selection and Arbitration
+                </li>
+                <li>
+                Impedance mismatch between specification and design in software systems
+                </li>
+                <li>
+                System decomposition
+                </li>
+            </ul>
+        </div>
+        <div class="page">
+            <h1>
+            Proposed Contribution
+            </h1>
+            <p>
+            Presents a computational architecture that addresses the grand challenge problem of system integration.
+            </p>
+        </div>
+        <div class="page">
+            <h1>
+            Methods
+            </h1>
+            <h2>
+            design a good system architecture
+            </h2>
+            <p>
+            IMA - The Intelligent Machine Architecture
+            </p>
+            <h2>
+            what's a architecture?
+            </h2>
+            <p>
+            A set of organizing principles and core components that are used to build the basis for the system.
+            </p>
+            <h2>
+            what a good architecture should be?
+            </h2>
+            <p>
+            Be like their IMA.
+            </p>
+        </div>
+        <div class="page">
+            <h1>
+            Methods (Cont.)
+            </h1>
+            <h2>
+            system decomposition
+            </h2>
+            <h3>
+            agent
+            </h3>
+            <p>
+            IMA is agent-based.  The term Agent is very popular at that time.
+            </p>
+            <h3>
+            knowledge-based
+            </h3>
+            <p>
+            excel at applying knowledge, work by exchanging/manipulating knowledge
+            </p>
+            <h3>
+            behavior-based(newer), approaches
+            </h3>
+            <ul>
+                <li>
+                strict priority
+                </li>
+                <li>
+                voting schemes
+                </li>
+                <li>
+                spreading activation mechanism
+                </li>
+            </ul>
+            <h3>
+            hybrid
+            </h3>
+            <p>
+            can have advantages from both knowledge-based and behavior-based system decomposition.
+            </p>
+        </div>
+        <div class="page">
+            <h1>
+            Methods (Cont.)
+            </h1>
+            <h3>
+            A service robotics benchmark
+            </h3>
+            <p>
+            Test the IMA using robots ISAC and Helpmate.
+            </p>
+            <span class="row-fluid">
+                <img class="span7" alt="ISAC" src="img/ISAC-KH.jpg" />
+                <img class="offset1 span4" alt="Helpmate" src="img/HelpMate.jpg" />
+            </span>
+        </div>
+        <div class="page">
+            <h2>
+            IMA - Intelligent Machine Architecture
+            </h2>
+            <p>
+            IMA has agents as subsystems.
+            </p>
+            <div class="row-fluid">
+                <div class="span6">
+                    <h3>
+                    properties of an agent assumed in IMA
+                    </h3>
+                    <ul>
+                        <li>
+                        Autonomy
+                        </li>
+                        <li>
+                        Proactivity
+                        </li>
+                        <li>
+                        Reactivity
+                        </li>
+                        <li>
+                        Connectivity
+                        </li>
+                        <li>
+                        Resource Bounded
+                        </li>
+                    </ul>
+                </div>
+                <div class="span6">
+                    <h3>
+                    Agent components
+                    </h3>
+                    <ul>
+                        <li>
+                        Agent Manager
+                        </li>
+                        <li>
+                        Agent Decision Engine
+                        </li>
+                        <li>
+                        Agent Productions
+                        </li>
+                        <li>
+                        Agent Resources
+                        </li>
+                        <li>
+                        Agent Component Managers
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <h1>
+            Results
+            </h1>
+            <p>
+            They don't finish yet(at that time). They used IMA to implement,
+            </p>
+            <ul>
+                <li>
+                visual servoing
+                </li>
+                <li>
+                skin-tone tracking
+                </li>
+                <li>
+                arm motion control
+                </li>
+            </ul>
+        </div>
+        <div class="page">
+            <h1>
+            Importance of work
+            </h1>
+            <p>
+            huh?
+            </p>
+        </div>
+        <div class="page">
+            <span style="font-size:120px;position:relative;top:200px;left:200px;">
+            Thank you.
+            </span>
+        </div>
+    </body>
+</html>
